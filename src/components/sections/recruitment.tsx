@@ -32,7 +32,7 @@ export function Recruitment() {
         className={cn(
           "text-black dark:text-white",
           "relative mx-0 max-w-[43.5rem] pt-5 md:mx-auto md:px-4 md:py-2",
-          "text-left tracking-tight text-balance md:text-center",
+          "text-left tracking-tight text-balance text-center",
           "text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
         )}
       >

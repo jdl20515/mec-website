@@ -28,7 +28,7 @@ export function Hero() {
                   className={cn(
                     "text-black dark:text-white",
                     "relative mx-0 max-w-[43.5rem] pt-5 md:mx-auto md:px-4 md:py-2",
-                    "text-left tracking-tighter text-balance md:text-center",
+                    "text-center tracking-tighter text-balance",
                     "text-5xl sm:text-7xl md:text-7xl lg:text-7xl"
                   )}
                 >
@@ -36,7 +36,7 @@ export function Hero() {
                 </h1>
               </div>
 
-              <p className="max-w-2xl text-left md:text-lg tracking-tight text-balance md:text-center">
+              <p className="max-w-2xl text-left md:text-lg tracking-tight text-balance text-center">
               The MIT Entrepreneurship Club is for those building the future rather than waiting for it. Founders, mentors, and friends all welcome.
               </p>
 
