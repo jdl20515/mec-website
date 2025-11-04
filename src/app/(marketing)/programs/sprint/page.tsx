@@ -19,7 +19,7 @@ export default function Sprint() {
             <p className="text-lg">• Pitch <em>to</em> and closely work <em>with</em> potential investors and large customers</p>
             <p className="text-lg">• The best mentorship (from CEOs, founders, investors, research experts, etc.)</p>
           </div>
-          <Button asChild size="lg">
+          <Button asChild size="lg" variant="secondary">
             <Link href="/apply">Apply Now</Link>
           </Button>
           <p className="text-sm text-muted-foreground mt-4">

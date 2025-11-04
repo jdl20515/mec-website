@@ -36,7 +36,7 @@ export function SiteHeader() {
               </Button>
               <Button
                 asChild
-                className="hidden md:flex rounded-lg bg-foreground text-background hover:bg-foreground/90 shadow-none border-0 text-base py-5 px-3"
+                className="hidden md:flex rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 shadow-none border-0 text-base py-5 px-3"
               >
                 <Link href="/apply">Apply Now</Link>
               </Button>

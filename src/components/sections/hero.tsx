@@ -36,7 +36,7 @@ export function Hero() {
                 </h1>
               </div>
 
-              <p className="text-primary max-w-2xl text-left md:text-lg tracking-tight text-balance md:text-center">
+              <p className="max-w-2xl text-left md:text-lg tracking-tight text-balance md:text-center">
               The MIT Entrepreneurship Club is for those building the future rather than waiting for it. Founders, mentors, and friends all welcome.
               </p>
 
