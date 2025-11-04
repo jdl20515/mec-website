@@ -19,7 +19,8 @@ const programs = [
   {
     title: "HS Pitch Competition",
     description: "High school pitch competition for the next generation of entrepreneurs.",
-    href: "/programs/hs-pitch",
+    href: "https://www.algoed.co/competitions/mit-entrepreneurship-club-competition",
+    external: true,
     image: "/media/mec-highschool.png", // Placeholder - replace with actual program image
   },
 ]
@@ -53,9 +54,15 @@ export default function Programs() {
                 <p className="text-sm text-muted-foreground mb-4 flex-1">
                   {program.description}
                 </p>
-                <Button asChild className="w-full">
-                  <Link href={program.href}>Learn More</Link>
-                </Button>
+                {program.external ? (
+                  <Button asChild className="w-full">
+                    <a href={program.href} target="_blank" rel="noopener noreferrer">Learn More</a>
+                  </Button>
+                ) : (
+                  <Button asChild className="w-full">
+                    <Link href={program.href}>Learn More</Link>
+                  </Button>
+                )}
               </CardContent>
             </Card>
           ))}

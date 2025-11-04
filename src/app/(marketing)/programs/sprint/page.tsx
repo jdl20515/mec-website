@@ -105,7 +105,7 @@ export default function Sprint() {
                 Accelerate young startups' progress with your experience.
               </p>
               <Button variant="outline" asChild>
-                <Link href="/community">Sign up to be a Mentor</Link>
+                <a href="mailto:mec-president@mit.edu">Sign up to be a Mentor</a>
               </Button>
             </CardContent>
           </Card>

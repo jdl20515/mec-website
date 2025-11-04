@@ -47,22 +47,32 @@ const nextConfig = {
       },
       {
         source: '/sprint',
-        destination: '/programs/spring',
+        destination: '/programs/sprint',
         permanent: true,
       },
       {
         source: '/hs-pitch-competition',
-        destination: '/programs/hs-pitch',
+        destination: 'https://www.algoed.co/competitions/mit-entrepreneurship-club-competition',
         permanent: true,
       },
       {
-        source: '/about',
-        destination: '/community',
+        source: '/programs/hs-pitch',
+        destination: 'https://www.algoed.co/competitions/mit-entrepreneurship-club-competition',
         permanent: true,
       },
       {
-        source: '/team',
-        destination: '/community/team',
+        source: '/programs/hs-pitch/:path*',
+        destination: 'https://www.algoed.co/competitions/mit-entrepreneurship-club-competition',
+        permanent: true,
+      },
+      {
+        source: '/community',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/community/:path*',
+        destination: '/about/:path*',
         permanent: true,
       },
     ]
