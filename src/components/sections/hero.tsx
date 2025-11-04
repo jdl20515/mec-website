@@ -37,7 +37,7 @@ export function Hero() {
               </div>
 
               <p className="text-primary max-w-2xl text-left md:text-lg tracking-tight text-balance md:text-center">
-              The MIT Entrepreneurship Club is the community for those who’d rather build the future than wait for it. Founders, mentors, and friends all welcome.
+              The MIT Entrepreneurship Club is for those building the future rather than waiting for it. Founders, mentors, and friends all welcome.
               </p>
 
               <div className="flex w-full flex-col gap-4 gap-y-2 md:mx-auto md:max-w-lg md:flex-row md:justify-center">
