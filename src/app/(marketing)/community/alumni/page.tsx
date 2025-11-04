@@ -19,6 +19,7 @@ export default function Alumni() {
         <div className="max-w-5xl mx-auto mb-8">
           <div className="flex flex-wrap gap-2 justify-center">
             <Badge variant="secondary">All</Badge>
+            <Badge variant="outline">2025</Badge>
             <Badge variant="outline">2024</Badge>
             <Badge variant="outline">2023</Badge>
             <Badge variant="outline">2022</Badge>

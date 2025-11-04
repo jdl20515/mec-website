@@ -33,9 +33,6 @@ export function SiteFooter() {
               <Link href="/apply">Apply</Link>
             </Button>
             <Button variant="outline" size="sm" asChild>
-              <Link href={`mailto:${siteConfig.emails.general}?subject=Sponsorship Inquiry`}>Sponsor</Link>
-            </Button>
-            <Button variant="outline" size="sm" asChild>
               <Link href={`mailto:${siteConfig.emails.general}`}>Contact</Link>
             </Button>
           </div>
@@ -47,7 +44,7 @@ export function SiteFooter() {
         <div className="flex h-14 items-center justify-between">
           <div className="text-muted-foreground w-full px-1 text-center text-xs leading-loose sm:text-sm">
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <span>© 2024 MIT Entrepreneurship Club</span>
+              <span>© 2025 MIT Entrepreneurship Club</span>
               <Link
                 href={siteConfig.links.linkedin}
                 target="_blank"
@@ -64,18 +61,7 @@ export function SiteFooter() {
               >
                 Instagram
               </Link>
-              <Link
-                href="#"
-                className="font-medium underline underline-offset-4 hover:text-foreground"
-              >
-                MEC 2024 Report
-              </Link>
-              <Link
-                href="#"
-                className="font-medium underline underline-offset-4 hover:text-foreground"
-              >
-                Accessibility
-              </Link>
+              
             </div>
           </div>
         </div>

@@ -4,8 +4,8 @@ export const siteConfig = {
   ogImage: "https://mec.mit.edu/og",
   description: "The MIT Entrepreneurship Club is a tight-knit community of talented students passionate about tackling the world's toughest challenges with an entrepreneurial mindset.",
   links: {
-    linkedin: "https://www.linkedin.com/company/mit-entrepreneurship-club",
-    instagram: "https://instagram.com/mitmec/",
+    linkedin: "https://www.linkedin.com/company/mit-entrepreneurship-club-mec/",
+    instagram: "https://www.instagram.com/mec_mit/",
   },
   emails: {
     general: "mec-exec@mit.edu",

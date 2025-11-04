@@ -237,7 +237,7 @@ export default function StartHouse() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
           <Card>
             <CardHeader>
-              <CardTitle>IAP 2024</CardTitle>
+              <CardTitle>IAP 2025</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm mb-4">

@@ -23,7 +23,7 @@ export default function Sprint() {
             <Link href="/apply">Apply Now</Link>
           </Button>
           <p className="text-sm text-muted-foreground mt-4">
-            Applications due <strong>September 16, 2024 at 11:59pm ET.</strong>
+            Applications due <strong>September 16, 2025 at 11:59pm ET.</strong>
           </p>
         </div>
       </section>
@@ -82,19 +82,6 @@ export default function Sprint() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-14">
-          <Card>
-            <CardHeader>
-              <CardTitle>Sponsor</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm mb-4">
-                Gain early access to startups and support innovation.
-              </p>
-              <Button variant="outline" asChild>
-                <a href="mailto:mec-president@mit.edu">Email us at mec-president@mit.edu</a>
-              </Button>
-            </CardContent>
-          </Card>
 
           <Card>
             <CardHeader>
