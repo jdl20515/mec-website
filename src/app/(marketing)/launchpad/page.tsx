@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 export default function Launchpad() {
   return (
     <div>
-      <section id="playbook-hero" className="container mx-auto py-2">
+      <section id="playbook-hero" className="container mx-auto py-12">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-foreground mb-6 text-5xl leading-[1.2] font-bold tracking-tighter">
             Launchpad

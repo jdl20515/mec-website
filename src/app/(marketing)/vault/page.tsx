@@ -6,9 +6,6 @@ export default function Vault() {
           <h1 className="text-foreground mb-6 text-5xl leading-[1.2] font-bold tracking-tighter">
             The Vault
           </h1>
-          <p className="text-foreground/80 text-lg font-medium tracking-tight text-balance mb-8">
-            Resources, people, perks, and growth tools exclusive to MEC members.
-          </p>
         </div>
       </section>
 

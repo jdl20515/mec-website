@@ -28,7 +28,7 @@ const programs = [
 export default function Programs() {
   return (
     <div>
-      <section id="programs-hero" className="container mx-auto py-7">
+      <section id="programs-hero" className="container mx-auto py-14">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-foreground mb-6 text-5xl leading-[1.2] font-bold tracking-tighter">
             Programs
