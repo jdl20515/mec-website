@@ -135,10 +135,17 @@
   * {
     @apply border-border;
   }
+  
+  html {
+    cursor: url('/cursor-icon-mirrored.png') 8 16, auto;
+  }
+  
   body {
     @apply bg-background text-foreground text-base;
     font-family: var(--font-rocky-condensed-light), sans-serif;
+    cursor: url('/cursor-icon-mirrored.png') 8 16, auto;
   }
+  
   /* Add letter spacing for bold text */
   /* .font-bold,
   .font-semibold,
@@ -146,4 +153,14 @@
   strong {
     letter-spacing: 0.05em;
   } */
+  
+  /* Interactive elements */
+  a, button, [role="button"], [onclick], input[type="submit"], input[type="button"] {
+    cursor: url('/cursor-icon-mirrored.png') 8 16, pointer !important;
+  }
+  
+  /* Text inputs should keep text cursor */
+  input[type="text"], input[type="email"], input[type="password"], input[type="search"], textarea {
+    cursor: url('/cursor-icon-mirrored.png') 8 16, text !important;
+  }
 }
