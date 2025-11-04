@@ -18,7 +18,7 @@ export function Hero() {
                   className={cn(
                     "text-black dark:text-white",
                     "relative mx-0 max-w-[43.5rem] pt-5 md:mx-auto md:px-4 md:py-2",
-                    "text-left font-semibold tracking-tighter text-balance md:text-center",
+                    "text-left tracking-tighter text-balance md:text-center",
                     "text-5xl sm:text-7xl md:text-7xl lg:text-7xl"
                   )}
                 >
@@ -38,7 +38,7 @@ export function Hero() {
                 <b className="font-[550] dark:font-[580]">shadcn/ui</b>.
               </p>
 
-              <div className="flex w-full flex-col gap-4 gap-y-2 md:mx-auto md:max-w-xs md:flex-row md:justify-center">
+              <div className="flex w-full flex-col gap-4 gap-y-2 md:mx-auto md:max-w-lg md:flex-row md:justify-center">
                 <Link
                   href="/components"
                   className={cn(
@@ -46,7 +46,7 @@ export function Hero() {
                       variant: "rainbow",
                       size: "lg",
                     }),
-                    "w-full gap-2"
+                    "w-full md:w-auto gap-2"
                   )}
                 >
                   Browse Components
@@ -59,7 +59,7 @@ export function Hero() {
                       size: "lg",
                       variant: "rainbow-outline",
                     }),
-                    "w-full gap-2"
+                    "w-full md:w-auto gap-2"
                   )}
                 >
                   Browse Templates

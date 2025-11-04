@@ -20,7 +20,7 @@ export function ShowcaseCard({
   return (
     <Link
       href={href}
-      className="group relative flex cursor-pointer flex-col gap-2 overflow-hidden"
+      className="group relative flex min-w-[400px] shrink-0 cursor-pointer flex-col gap-2 overflow-hidden"
     >
       <Image
         src={image}
@@ -41,24 +41,67 @@ export function ShowcaseCard({
   )
 }
 
-// Simplified showcase data - can be replaced with actual data later
+// Showcase data - add your actual showcase items here
 const showcaseData: Array<{
   title: string
   image: string
   href: string
   affiliation?: string
   featured?: boolean
-}> = []
+}> = [
+  {
+    title: "Example Project 1",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    href: "https://example.com",
+    affiliation: "Company Name",
+    featured: true,
+  },
+  {
+    title: "Example Project 2",
+    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
+    href: "https://example.com",
+    affiliation: "Company Name",
+    featured: true,
+  },
+  {
+    title: "Example Project 3",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    href: "https://example.com",
+    affiliation: "Company Name",
+    featured: true,
+  },
+  {
+    title: "Example Project 4",
+    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
+    href: "https://example.com",
+    affiliation: "Company Name",
+    featured: true,
+  },
+  {
+    title: "Example Project 5",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    href: "https://example.com",
+    affiliation: "Company Name",
+    featured: true,
+  },
+  {
+    title: "Example Project 6",
+    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
+    href: "https://example.com",
+    affiliation: "Company Name",
+    featured: true,
+  },
+]
 
 export function Showcase() {
   const featuredShowcases = showcaseData.filter((s) => s.featured)
 
   return (
-    <section id="showcase" className="container py-14">
+    <section id="showcase" className="container mx-auto py-14">
       <h2 className="text-foreground mb-2 text-center text-5xl leading-[1.2] font-bold tracking-tighter">
         Showcase
       </h2>
-      <h3 className="text-foreground/80 mx-auto mb-8 text-center text-lg font-medium tracking-tight text-balance">
+      <h3 className="text-foreground/80 mx-auto mb-8 max-w-2xl text-center text-lg font-medium tracking-tight text-balance">
         Companies choose Magic UI to build their landing pages.
       </h3>
       {featuredShowcases.length > 0 ? (

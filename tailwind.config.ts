@@ -9,6 +9,22 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			sans: ['var(--font-rocky-condensed)', 'sans-serif'],
+  		},
+  		fontSize: {
+  			xs: ['1rem', { lineHeight: '1.5rem' }],      // 16px (was 12px)
+  			sm: ['1.125rem', { lineHeight: '1.75rem' }],  // 18px (was 14px)
+  			base: ['1.375rem', { lineHeight: '2rem' }],   // 22px (was 16px)
+  			lg: ['1.625rem', { lineHeight: '2.25rem' }],  // 26px (was 18px)
+  			xl: ['2rem', { lineHeight: '2.5rem' }],       // 32px (was 20px)
+  			'2xl': ['2.5rem', { lineHeight: '3rem' }],    // 40px (was 24px)
+  			'3xl': ['3rem', { lineHeight: '1' }],         // 48px (was 30px)
+  			'4xl': ['3.75rem', { lineHeight: '1' }],      // 60px (was 36px)
+  			'5xl': ['4.5rem', { lineHeight: '1' }],       // 72px (was 48px)
+  			'6xl': ['6rem', { lineHeight: '1' }],         // 96px (was 60px)
+  			'7xl': ['7.5rem', { lineHeight: '1' }],       // 120px (was 72px)
+  		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
