@@ -1,8 +1,19 @@
+"use client"
+
+import * as React from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
+// @ts-ignore - embla-carousel-autoplay may not have type definitions
+import Autoplay from "embla-carousel-autoplay"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel"
 
 export function Hero() {
   // Simplified hero - remove announcement banner for now
@@ -37,7 +48,7 @@ export function Hero() {
                       variant: "default",
                       size: "lg",
                     }),
-                    "w-full md:w-auto gap-2"
+                    "w-full md:w-auto gap-2 text-base px-8 py-6"
                   )}
                 >
                   Apply to MEC
@@ -50,19 +61,63 @@ export function Hero() {
                       size: "lg",
                       variant: "outline",
                     }),
-                    "w-full md:w-auto gap-2"
+                    "w-full md:w-auto gap-2 text-base px-8 py-6"
                   )}
                 >
                   What we're up to
                   <ChevronRight className="ml-1 size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
                 </Link>
               </div>
+
+              <div className="w-full mt-12 md:mt-16">
+                <HeroCarousel />
+              </div>
             </div>
           </div>
-
-    
         </div>
       </div>
     </section>
+  )
+}
+
+function HeroCarousel() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false })
+  )
+
+  const images = [
+    "/media/1.jpg",
+    "/media/2.jpg",
+    "/media/3.jpg",
+    "/media/4.jpg",
+  ]
+
+  return (
+    <Carousel
+      className="w-full  mx-auto"
+      plugins={[plugin.current]}
+      opts={{
+        align: "start",
+        loop: true,
+      }}
+    >
+      <CarouselContent className="-ml-2 md:-ml-4">
+        {images.map((imagePath, index) => (
+          <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+            <div className="p-1">
+              <div className="relative aspect-square overflow-hidden rounded-xl">
+                <Image
+                  src={imagePath}
+                  alt={`Gallery image ${index + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
   )
 }
