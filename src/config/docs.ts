@@ -8,31 +8,29 @@ interface DocsConfig {
 export const docsConfig: DocsConfig = {
   mainNav: [
     {
-      title: "Components",
-      href: "/components",
+      title: "About",
+      href: "/about",
     },
     {
-      title: "Templates",
-      href: "/templates",
+      title: "Team",
+      href: "/team",
     },
     {
-      title: "Showcase",
-      href: "/showcase",
+      title: "StartHouse",
+      href: "/starthouse",
+    },
+    {
+      title: "Startup Interface",
+      href: "/startup-interface",
+    },
+    {
+      title: "Sprint",
+      href: "/sprint",
+    },
+    {
+      title: "HS Pitch Competition",
+      href: "/hs-pitch-competition",
     },
   ],
-  sidebarNav: [
-    {
-      title: "Getting Started",
-      items: [
-        {
-          title: "Introduction",
-          href: "/docs",
-        },
-        {
-          title: "Installation",
-          href: "/docs/installation",
-        },
-      ],
-    },
-  ],
+  sidebarNav: [],
 }

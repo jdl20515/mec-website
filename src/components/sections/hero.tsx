@@ -3,7 +3,6 @@ import { ChevronRight } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
-import { TechStack } from "@/components/tech-stack"
 
 export function Hero() {
   // Simplified hero - remove announcement banner for now

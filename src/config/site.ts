@@ -1,21 +1,24 @@
 export const siteConfig = {
-  name: "MEC Website",
-  url: "https://mec-website.com",
-  ogImage: "https://mec-website.com/og",
-  description: "Beautifully designed landing page components built with React & Tailwind CSS.",
+  name: "MIT Entrepreneurship Club",
+  url: "https://mec.mit.edu",
+  ogImage: "https://mec.mit.edu/og",
+  description: "The MIT Entrepreneurship Club is a tight-knit community of talented students passionate about tackling the world's toughest challenges with an entrepreneurial mindset.",
   links: {
-    twitter: "https://twitter.com/mec",
-    discord: "https://discord.gg/mec",
-    github: "https://github.com/mec",
-    instagram: "https://instagram.com/mec/",
+    linkedin: "https://www.linkedin.com/company/mit-entrepreneurship-club",
+    instagram: "https://instagram.com/mitmec/",
+  },
+  emails: {
+    general: "mec-exec@mit.edu",
+    leadership: "mec-president@mit.edu",
   },
   keywords: [
-    "React",
-    "Tailwind CSS",
-    "Motion",
-    "Landing Page",
-    "Components",
-    "Next.js",
+    "MIT",
+    "Entrepreneurship",
+    "Startup",
+    "MIT Entrepreneurship Club",
+    "MEC",
+    "StartHouse",
+    "Startup Accelerator",
   ],
 }
 

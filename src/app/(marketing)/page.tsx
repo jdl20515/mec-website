@@ -1,15 +1,15 @@
 import { Hero } from "@/components/sections/hero"
-import { Showcase } from "@/components/sections/showcase"
-import { Testimonials } from "@/components/sections/testimonials"
-import { VideoTestimonials } from "@/components/sections/video-testimonials"
+import { Recruitment } from "@/components/sections/recruitment"
+import { Initiatives } from "@/components/sections/initiatives"
+import { Contact } from "@/components/sections/contact"
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Showcase />
-      {/* <Testimonials /> */}
-      {/* <VideoTestimonials /> */}
+      <Recruitment />
+      <Initiatives />
+      <Contact />
     </>
   )
 }
