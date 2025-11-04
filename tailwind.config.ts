@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
   	extend: {
   		fontFamily: {
-  			sans: ['var(--font-rocky-condensed)', 'sans-serif'],
+  			sans: ['var(--font-rocky-condensed-light)', 'sans-serif'],
   		},
   		fontSize: {
   			xs: ['1rem', { lineHeight: '1.5rem' }],      // 16px (was 12px)

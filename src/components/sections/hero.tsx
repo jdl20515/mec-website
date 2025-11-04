@@ -22,20 +22,12 @@ export function Hero() {
                     "text-5xl sm:text-7xl md:text-7xl lg:text-7xl"
                   )}
                 >
-                  UI library for Design Engineers
+                  The Founder Community at MIT
                 </h1>
               </div>
 
-              <p className="text-primary max-w-xl text-left text-base tracking-tight text-balance md:text-center md:text-lg">
-                150+ free and open-source animated components and effects built
-                with <b className="font-[550] dark:font-[580]">React</b>,{" "}
-                <b className="font-[550] dark:font-[580]">Typescript</b>,{" "}
-                <b className="font-[550] dark:font-[580]">Tailwind CSS</b>, and{" "}
-                <b className="font-[550] dark:font-[580]">Motion</b>
-                .
-                <br />
-                Perfect companion for{" "}
-                <b className="font-[550] dark:font-[580]">shadcn/ui</b>.
+              <p className="text-primary max-w-2xl text-left md:text-lg tracking-tight text-balance md:text-center">
+              The MIT Entrepreneurship Club is the community for those who’d rather build the future than wait for it. Founders, mentors, and friends all welcome.
               </p>
 
               <div className="flex w-full flex-col gap-4 gap-y-2 md:mx-auto md:max-w-lg md:flex-row md:justify-center">
@@ -69,18 +61,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative mx-auto flex w-full max-w-56 items-center justify-center">
-            <TechStack
-              className="mx-auto flex w-full items-center justify-between"
-              technologies={[
-                "react",
-                "typescript",
-                "tailwindcss",
-                "motion",
-                "shadcn",
-              ]}
-            />
-          </div>
+    
         </div>
       </div>
     </section>

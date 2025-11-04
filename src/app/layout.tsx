@@ -9,7 +9,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 const rockyCondensed = localFont({
   src: "../../public/rocky-condensed-light.otf",
-  variable: "--font-rocky-condensed",
+  variable: "--font-rocky-condensed-light",
   display: "swap",
 })
 
