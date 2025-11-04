@@ -2,16 +2,16 @@ import Link from "next/link"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
-export default function Sprint() {
+export default function Spring() {
   return (
     <div>
-      <section id="sprint-hero" className="container mx-auto py-14">
+      <section id="spring-hero" className="container mx-auto py-14">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-foreground mb-6 text-5xl leading-[1.2] font-bold tracking-tighter">
-            Sprint
+            Spring Fellowship
           </h1>
           <p className="text-foreground/80 text-lg font-medium tracking-tight text-balance mb-8">
-            Fast-paced program to rapidly develop and test your startup idea.
+            10-12 week intensive program with milestones, workshops, and demo day.
           </p>
         </div>
       </section>
@@ -30,7 +30,7 @@ export default function Sprint() {
             </CardHeader>
             <CardContent>
               <p className="text-sm">
-                Sprint program details and timeline information coming soon.
+                Spring Fellowship program details and timeline information coming soon.
               </p>
             </CardContent>
           </Card>
@@ -50,7 +50,7 @@ export default function Sprint() {
             </CardHeader>
             <CardContent>
               <p className="text-sm">
-                Past sprint outcomes and success stories coming soon.
+                Past Spring Fellowship outcomes and success stories coming soon.
               </p>
             </CardContent>
           </Card>
@@ -60,7 +60,7 @@ export default function Sprint() {
             </CardHeader>
             <CardContent>
               <p className="text-sm mb-4">
-                Learn more about how to get involved in the Sprint program.
+                Learn more about how to get involved in the Spring Fellowship program.
               </p>
               <Button variant="outline" asChild>
                 <Link href="/apply">Apply Now</Link>

@@ -50,6 +50,9 @@
     --color-3: oklch(69.6% 0.165 251);
     --color-4: oklch(80.2% 0.134 225);
     --color-5: oklch(90.7% 0.231 133);
+    
+    /* MEC accent color */
+    --accent-purple: 126, 41, 255;
   }
   .dark {
     --background: 0 0% 3.9%;

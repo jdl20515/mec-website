@@ -22,7 +22,10 @@ export function MainNav({
         <Button key={item.href} variant="ghost" asChild size="sm" className="text-base">
           <Link
             href={item.href ?? ""}
-            className={cn(pathname === item.href && "text-primary")}
+            className={cn(
+              pathname === item.href && "text-primary",
+              item.title === "The Vault"
+            )}
           >
             {item.title}
           </Link>

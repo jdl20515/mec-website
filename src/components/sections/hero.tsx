@@ -31,29 +31,29 @@ export function Hero() {
 
               <div className="flex w-full flex-col gap-4 gap-y-2 md:mx-auto md:max-w-lg md:flex-row md:justify-center">
                 <Link
-                  href="/components"
+                  href="/apply"
                   className={cn(
                     buttonVariants({
-                      variant: "rainbow",
+                      variant: "default",
                       size: "lg",
                     }),
                     "w-full md:w-auto gap-2"
                   )}
                 >
-                  Browse Components
+                  Apply to MEC
                   <ChevronRight className="ml-1 size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
                 </Link>
                 <Link
-                  href="/templates"
+                  href="/community"
                   className={cn(
                     buttonVariants({
                       size: "lg",
-                      variant: "rainbow-outline",
+                      variant: "outline",
                     }),
                     "w-full md:w-auto gap-2"
                   )}
                 >
-                  Browse Templates
+                  What we're up to
                   <ChevronRight className="ml-1 size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
                 </Link>
               </div>

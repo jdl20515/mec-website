@@ -2,12 +2,12 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 
 export function Recruitment() {
   return (
-    <section id="recruitment" className="container mx-auto py-14">
+    <section id="upcoming" className="container mx-auto py-14">
       <h2 className="text-foreground mb-2 text-center text-5xl leading-[1.2] font-bold tracking-tighter">
-        want to join?
+        Upcoming
       </h2>
       <h3 className="text-foreground/80 mx-auto mb-8 max-w-2xl text-center text-lg font-medium tracking-tight text-balance">
-        fall recruitment is in full swing, come to events and apply now!
+        Join us for upcoming events and activities.
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Card>
