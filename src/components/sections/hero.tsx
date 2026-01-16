@@ -64,7 +64,7 @@ export function Hero() {
                     "w-full md:w-auto gap-2 text-base px-8 py-6"
                   )}
                 >
-                  What we're up to
+                  What we&apos;re up to
                   <ChevronRight className="ml-1 size-4 shrink-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
                 </Link>
               </div>

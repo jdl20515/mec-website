@@ -22,10 +22,10 @@ export default function Launchpad() {
               Building something new is the hardest thing you can do.
             </p>
             <p className="text-base text-foreground/80 leading-relaxed">
-              The next Steve Jobs won't build another iPhone. The next Mark Zuckerberg won't build another social network.
+              The next Steve Jobs won&apos;t build another iPhone. The next Mark Zuckerberg won&apos;t build another social network.
             </p>
             <p className="text-base text-foreground/80 leading-relaxed">
-              We can't teach you how to build the next big thing, because there's no formula for that.
+              We can&apos;t teach you how to build the next big thing, because there&apos;s no formula for that.
             </p>
             <p className="text-base text-foreground/80 leading-relaxed">
               What we can do is help you take the first step. Start with an idea, build something real, and learn faster than anyone else.
@@ -37,7 +37,7 @@ export default function Launchpad() {
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-3">Essential Reading</h2>
               <p className="text-base text-muted-foreground leading-relaxed">
-                I don't recommend books unless every page is truly worth a read. A ChatGPT summary will NOT do these books justice. And these books are short.
+                I don&apos;t recommend books unless every page is truly worth a read. A ChatGPT summary will NOT do these books justice. And these books are short.
               </p>
             </div>
 
@@ -112,7 +112,7 @@ export default function Launchpad() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-foreground/80 leading-relaxed mb-4">
-                    Y Combinator's free startup school program covering everything from idea validation to fundraising.
+                    Y Combinator&apos;s free startup school program covering everything from idea validation to fundraising.
                   </p>
                   <Button variant="outline" size="sm" asChild>
                     <a href="https://www.startupschool.org" target="_blank" rel="noopener noreferrer">
@@ -125,11 +125,11 @@ export default function Launchpad() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-xl">Harvard's CS50 Introduction to Computer Science</CardTitle>
+                  <CardTitle className="text-xl">Harvard&apos;s CS50 Introduction to Computer Science</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-foreground/80 leading-relaxed mb-4">
-                    Harvard's introduction to computer science. Essential programming fundamentals for building technical products.
+                    Harvard&apos;s introduction to computer science. Essential programming fundamentals for building technical products.
                   </p>
                   <Button variant="outline" size="sm" asChild>
                     <a href="https://cs50.harvard.edu" target="_blank" rel="noopener noreferrer">
@@ -174,7 +174,7 @@ export default function Launchpad() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-xl">David's Guide to Your First SaaS</CardTitle>
+                  <CardTitle className="text-xl">David&apos;s Guide to Your First SaaS</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-foreground/80 leading-relaxed mb-4">
@@ -201,7 +201,7 @@ export default function Launchpad() {
               <Card>
                 <CardHeader>
                   <div className="flex items-center justify-between">
-                    <CardTitle className="text-xl">1. Andrew Ng's Machine Learning Specialization</CardTitle>
+                    <CardTitle className="text-xl">1. Andrew Ng&apos;s Machine Learning Specialization</CardTitle>
                     <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">Start Here</span>
                   </div>
                 </CardHeader>
@@ -242,12 +242,13 @@ export default function Launchpad() {
                 <CardHeader>
                   <div className="flex items-center justify-between">
                     <CardTitle className="text-xl">3. MIT Grad ML</CardTitle>
+                    <CardTitle className="text-xl">3. MIT Grad ML</CardTitle>
                     <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">Advanced</span>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-foreground/80 leading-relaxed mb-4">
-                    MIT's graduate-level machine learning course covering advanced topics and theoretical foundations.
+                    MIT&apos;s graduate-level machine learning course covering advanced topics and theoretical foundations.
                   </p>
                   <Button variant="outline" size="sm" asChild>
                     <a href="https://mit6874.github.io" target="_blank" rel="noopener noreferrer">

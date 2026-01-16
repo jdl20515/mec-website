@@ -19,7 +19,7 @@ export default function About() {
           
           <div className="space-y-4 text-base leading-relaxed">
             <p>
-              We are the driving force behind MIT's undergraduate startup community, uniting hundreds of students dedicated to confronting global challenges with an entrepreneurial mindset.
+              We are the driving force behind MIT&apos;s undergraduate startup community, uniting hundreds of students dedicated to confronting global challenges with an entrepreneurial mindset.
             </p>
 
             <p>

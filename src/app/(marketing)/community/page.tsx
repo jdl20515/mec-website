@@ -12,7 +12,7 @@ export default function Community() {
             Community
           </h1>
           <p className="text-foreground/80 text-lg font-medium tracking-tight text-balance mb-8">
-            The MIT Entrepreneurship Club is a tight-knit community of talented students passionate about tackling the world's toughest challenges with an entrepreneurial mindset.
+            The MIT Entrepreneurship Club is a tight-knit community of talented students passionate about tackling the world&apos;s toughest challenges with an entrepreneurial mindset.
           </p>
         </div>
       </section>

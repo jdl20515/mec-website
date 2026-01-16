@@ -285,7 +285,7 @@ export default function StartHouse() {
             <AccordionItem value="item-3">
               <AccordionTrigger>Is there funding provided?</AccordionTrigger>
               <AccordionContent>
-                While we don't provide direct funding, participants receive credits for cloud services, legal consultations, and access to our investor network. Many teams go on to raise funding after the program.
+                While we don&apos;t provide direct funding, participants receive credits for cloud services, legal consultations, and access to our investor network. Many teams go on to raise funding after the program.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">

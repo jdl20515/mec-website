@@ -58,7 +58,7 @@ export default function Sprint() {
             </CardHeader>
             <CardContent>
               <p className="text-sm">
-                MIT's Campus (exact location TBD)
+                MIT&apos;s Campus (exact location TBD)
               </p>
             </CardContent>
           </Card>
@@ -89,7 +89,7 @@ export default function Sprint() {
             </CardHeader>
             <CardContent>
               <p className="text-sm mb-4">
-                Accelerate young startups' progress with your experience.
+                Accelerate young startups&apos; progress with your experience.
               </p>
               <Button variant="outline" asChild>
                 <a href="mailto:mec-president@mit.edu">Sign up to be a Mentor</a>
