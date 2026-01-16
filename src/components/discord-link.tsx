@@ -15,12 +15,13 @@ export function DiscordLink({ className }: { className?: string }) {
     <Tooltip>
       <TooltipTrigger asChild>
         <Link
+          href="https://discord.gg/"
           className={cn(
             buttonVariants({ variant: "ghost", size: "sm" }),
             "shadow-none transition-colors",
             className
           )}
-          href={siteConfig.links.discord}
+          // href={siteConfig.links.discord}
           target="_blank"
           rel="noreferrer"
         >

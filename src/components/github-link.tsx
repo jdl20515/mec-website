@@ -17,7 +17,7 @@ export function GitHubLink({ className }: { className?: string }) {
         <TooltipTrigger asChild>
           <Button asChild size="lg" variant="ghost" className="h-8 shadow-none">
             <Link
-              href={siteConfig.links.github}
+              href="https://github.com/"
               target="_blank"
               rel="noreferrer"
               className={className}
