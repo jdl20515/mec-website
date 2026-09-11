@@ -51,10 +51,10 @@
     --color-3: oklch(69.6% 0.165 251);
     --color-4: oklch(80.2% 0.134 225);
     --color-5: oklch(90.7% 0.231 133);
-    
+
     /* MEC accent color */
     --accent-purple: 126, 41, 255;
-    
+
     /* Secondary purple color */
     --secondary-purple: 264 100% 58%;
   }
@@ -91,7 +91,7 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-    
+
     /* Secondary purple color (dark mode) */
     --secondary-purple: 264 100% 65%;
   }
@@ -142,17 +142,17 @@
   * {
     @apply border-border;
   }
-  
+
   html {
     cursor: url('/cursor-icon-mirrored.png') 8 16, auto;
   }
-  
+
   body {
     @apply bg-background text-foreground text-base;
-    font-family: var(--font-rocky-condensed-light), sans-serif;
+    font-family: var(--font-special-gothic), sans-serif;
     cursor: url('/cursor-icon-mirrored.png') 8 16, auto;
   }
-  
+
   /* Add letter spacing for bold text */
   /* .font-bold,
   .font-semibold,
@@ -160,12 +160,12 @@
   strong {
     letter-spacing: 0.05em;
   } */
-  
+
   /* Interactive elements */
   a, button, [role="button"], [onclick], input[type="submit"], input[type="button"] {
     cursor: url('/cursor-icon-mirrored.png') 8 16, pointer !important;
   }
-  
+
   /* Text inputs should keep text cursor */
   input[type="text"], input[type="email"], input[type="password"], input[type="search"], textarea {
     cursor: url('/cursor-icon-mirrored.png') 8 16, text !important;

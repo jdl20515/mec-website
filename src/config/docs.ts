@@ -12,16 +12,12 @@ export const docsConfig: DocsConfig = {
       href: "/about",
     },
     {
-      title: "Programs",
-      href: "/programs",
+      title: "Events",
+      href: "/events",
     },
     {
-      title: "Launchpad",
-      href: "/launchpad",
-    },
-    {
-      title: "The Vault",
-      href: "/vault",
+      title: "Get Involved",
+      href: "/get-involved",
     },
   ],
   sidebarNav: [],

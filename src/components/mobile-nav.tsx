@@ -54,7 +54,7 @@ export function MobileNav({ className }: { className?: string }) {
       >
         <div className="flex flex-col gap-12 overflow-auto px-6 py-6">
           <div className="flex flex-col gap-4">
-            <div className="text-muted-foreground text-sm font-medium">
+            <div className="text-muted-foreground text-[1.125rem] leading-7 font-medium">
               Menu
             </div>
             <div className="flex flex-col gap-3">
@@ -72,7 +72,7 @@ export function MobileNav({ className }: { className?: string }) {
                       <span className="flex items-center gap-2">
                         {item.title}
                         {item.label && (
-                          <span className="rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline">
+                          <span className="rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-base leading-6 text-[#000000] no-underline group-hover:no-underline">
                             {item.label}
                           </span>
                         )}
@@ -107,7 +107,7 @@ function MobileLink({
         router.push(href.toString())
         onOpenChange?.(false)
       }}
-      className={cn("text-2xl font-medium", className)}
+      className={cn("text-[2.5rem] leading-[3rem] font-medium", className)}
       {...props}
     >
       {children}

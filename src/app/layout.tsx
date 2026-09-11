@@ -1,24 +1,18 @@
 import type { Metadata } from "next"
 import type { Viewport } from "next"
-import localFont from "next/font/local"
 import "./globals.css"
 
 import { Toaster } from "@/components/ui/sonner"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { ThemeProvider } from "@/components/theme-provider"
-
-const rockyCondensed = localFont({
-  src: "../../public/rocky-condensed-light.otf",
-  variable: "--font-rocky-condensed-light",
-  display: "swap",
-})
+import { specialGothic } from "@/lib/fonts"
 
 export const metadata: Metadata = {
-  title: "MEC Website",
+  title: "MIT Entrepreneurship Club: MEC",
   description: "The MIT Entrepreneurship Club.",
   icons: {
-    icon: '/icon.png',
-    apple: '/apple-icon.png',
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
   },
 }
 
@@ -36,11 +30,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={rockyCondensed.variable}>
+    <html lang="en" suppressHydrationWarning className={specialGothic.variable}>
       <head />
-      <body
-        className={`${rockyCondensed.className} text-foreground group/body overscroll-none font-sans antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] xl:[--footer-height:calc(var(--spacing)*24)]`}
-      >
+      <body className="text-foreground group/body overscroll-none font-sans antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] xl:[--footer-height:calc(var(--spacing)*24)]">
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider>
             {children}
