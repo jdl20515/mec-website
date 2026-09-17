@@ -1,49 +1,36 @@
-import Link from "next/link"
+import Image from "next/image"
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
 import { siteConfig } from "@/config/site"
 
 export default function GetInvolvedPage() {
   return (
-    <section className="container mx-auto py-16 md:py-24">
+    <section className="mx-auto max-w-7xl px-6 py-20 md:px-16 md:py-28">
       <div className="mx-auto max-w-3xl text-center">
-        <h1 className="text-5xl tracking-tight md:text-7xl">Get Involved</h1>
-        <p className="text-muted-foreground mt-4 text-lg">
-          Join MEC, come to an event, or work with our founder community.
+        <h1 className="text-4xl font-bold tracking-tighter">
+          Partner with MEC
+        </h1>
+        <p className="text-muted-foreground mt-6 text-xl leading-snug md:text-2xl">
+          We work with VCs, startups, and labs on events, programs, and other
+          collaborations. Feel free to reach out at{" "}
+          <a
+            href={`mailto:${siteConfig.emails.general}`}
+            className="text-blue-600 underline underline-offset-4"
+          >
+            {siteConfig.emails.general}
+          </a>
+          .
         </p>
       </div>
 
-      <div className="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-3">
-        <Card className="flex h-full flex-col p-6">
-          <h2 className="text-2xl font-semibold">Join MEC</h2>
-          <p className="text-muted-foreground mt-3 flex-1">
-            Apply to become part of the MIT Entrepreneurship Club.
-          </p>
-          <Button asChild className="mt-8 w-full">
-            <Link href="/apply">Apply now</Link>
-          </Button>
-        </Card>
-
-        <Card className="flex h-full flex-col p-6">
-          <h2 className="text-2xl font-semibold">Attend an event</h2>
-          <p className="text-muted-foreground mt-3 flex-1">
-            Meet founders and builders at an upcoming MEC event.
-          </p>
-          <Button asChild variant="outline" className="mt-8 w-full">
-            <Link href="/events">View events</Link>
-          </Button>
-        </Card>
-
-        <Card className="flex h-full flex-col p-6">
-          <h2 className="text-2xl font-semibold">Partner with MEC</h2>
-          <p className="text-muted-foreground mt-3 flex-1">
-            Connect with our team about partnerships and founder support.
-          </p>
-          <Button asChild variant="outline" className="mt-8 w-full">
-            <Link href={`mailto:${siteConfig.emails.general}`}>Contact us</Link>
-          </Button>
-        </Card>
+      <div className="relative mt-12 aspect-[4/3] overflow-hidden bg-muted md:mt-16 md:aspect-[16/7]">
+        <Image
+          src="/media/2.jpg"
+          alt="MEC students working beneath the Dream Big Dreams mural"
+          fill
+          priority
+          className="object-cover"
+          sizes="(max-width: 1280px) 100vw, 1152px"
+        />
       </div>
     </section>
   )

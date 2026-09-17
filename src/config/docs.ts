@@ -16,7 +16,7 @@ export const docsConfig: DocsConfig = {
       href: "/events",
     },
     {
-      title: "Get Involved",
+      title: "Partner",
       href: "/get-involved",
     },
   ],

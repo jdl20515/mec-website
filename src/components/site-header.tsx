@@ -8,9 +8,8 @@ import { Button } from "@/components/ui/button"
 export function SiteHeader() {
   return (
     <header className="bg-background sticky top-0 z-50 w-full">
-      <div className="container mx-auto px-3">
+      <div className="mx-auto max-w-7xl px-6 md:px-16">
         <div className="flex h-20 items-center gap-2">
-          <MobileNav className="flex lg:hidden" />
           <LogoButton />
           <MainNav items={docsConfig.mainNav} className="hidden lg:flex" />
           <div className="flex flex-1 items-center justify-between gap-2 md:justify-end">
@@ -23,6 +22,7 @@ export function SiteHeader() {
               </Button>
             </div>
           </div>
+          <MobileNav className="ml-auto flex lg:hidden" />
         </div>
       </div>
     </header>

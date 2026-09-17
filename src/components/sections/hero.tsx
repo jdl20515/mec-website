@@ -28,7 +28,7 @@ const nextSteps = [
     description: "See upcoming events and ways to start building.",
     href: "/events",
     linkLabel: "View events",
-    image: "/media/2.jpg",
+    image: "/media/bookface-photo.jpg",
   },
   {
     title: "Join MEC",
@@ -50,9 +50,9 @@ export function Hero({ nextStepsVariant }: HeroProps = {}) {
   return (
     <section id="hero">
       <div className="relative h-full overflow-hidden py-5 md:py-14">
-        <div className="z-10 flex flex-col">
+        <div className="z-10 mx-auto flex max-w-7xl flex-col">
           <div className="mt-10 grid grid-cols-1 md:mt-20">
-            <div className="flex flex-col items-start gap-6 px-7 pb-8 text-center md:items-center md:px-10">
+            <div className="flex flex-col items-start gap-6 px-6 pb-8 text-center md:items-center md:px-16">
               <div className="relative flex flex-col gap-4 md:items-center lg:flex-row">
                 <h1
                   className={cn(
@@ -102,9 +102,8 @@ export function Hero({ nextStepsVariant }: HeroProps = {}) {
 
               <div className="mt-20 w-full md:mt-28">
                 <p className="max-w-5xl text-left text-3xl leading-[1.12] tracking-tight sm:text-4xl md:text-5xl">
-                  We’re entering one of the most consequential periods in the
-                  history of technology. The companies built now will shape
-                  what comes next.{" "}
+                  There has never been a better time to build an ambitious
+                  company.{" "}
                   <span className="mt-[1.12em] block">
                     We want more of them to start at MIT.
                   </span>
@@ -249,9 +248,6 @@ function NextStepsPreview({ variant }: { variant: NextStepsVariant }) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/25" />
             <div className="relative z-10">
               <h3 className="text-3xl tracking-tight">{step.title}</h3>
-              <p className="mt-3 max-w-xs text-base leading-snug text-white/75">
-                {step.description}
-              </p>
             </div>
           </StepLink>
         ))}
@@ -363,10 +359,6 @@ function HeroCarousel() {
     { src: "/media/2.jpg", alt: "MEC community event" },
     { src: "/media/3.jpg", alt: "MEC community event" },
     { src: "/media/4.jpg", alt: "MEC community event" },
-    {
-      src: "/team/david-lomelin-yc-square.jpg",
-      alt: "MEC executive David Lomelin at Y Combinator",
-    },
   ]
 
   return (

@@ -1,27 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
-
-const programs = [
-  {
-    title: "StartHouse",
-    description: "10-week startup accelerator.",
-    href: "/programs/starthouse",
-    image: "/media/mec-starthouse.jpg",
-  },
-  {
-    title: "MEC Sprint",
-    description: "36-hour founder build sprint.",
-    href: "/programs/sprint",
-    image: "/media/mec-sprint.png",
-  },
-  {
-    title: "High School Pitch Competition",
-    description: "Pitch competition for high school founders.",
-    href: "https://www.algoed.co/competitions/mit-entrepreneurship-club-competition",
-    external: true,
-    image: "/media/mec-highschool.png",
-  },
-]
 
 const stats = [
   { value: "150+", label: "Alumni" },
@@ -89,31 +66,51 @@ const teamMembers = [
 
 export default function About() {
   return (
-    <div className="mx-auto max-w-7xl">
-      <section id="about-hero" className="py-14 md:py-20">
-        <h1 className="text-foreground text-6xl leading-none font-bold tracking-tighter">
-          About
-        </h1>
-      </section>
-
-      <section id="what-is-mec" className="py-10 md:py-14">
+    <div className="mx-auto max-w-7xl px-6 md:px-16">
+      <section id="what-is-mec" className="pt-16 pb-12 md:pt-24 md:pb-16">
         <h2 className="text-foreground mb-6 text-4xl font-bold tracking-tighter">
           What is MEC?
         </h2>
         <p className="text-muted-foreground max-w-4xl text-2xl leading-snug">
-          MEC brings together hundreds of MIT students interested in startups.
-          We help them meet collaborators, test ideas, and find opportunities
-          across the startup ecosystem. Through events, founder programs, and
-          partnerships, students get the support and community to start
-          building.
+          The MIT Entrepreneurship Club is the startup community at MIT.
         </p>
+        <p className="text-muted-foreground mt-5 max-w-4xl text-2xl leading-snug">
+          We are a student-run network built on the belief that people with
+          ambitious ideas move faster when they know one another. MEC gives
+          that network a home on campus.
+        </p>
+        <div className="relative mt-12 aspect-[16/7] overflow-hidden bg-muted">
+          <Image
+            src="/media/4.jpg"
+            alt="MEC students together at a community dinner"
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 1280px) 100vw, 1216px"
+          />
+        </div>
       </section>
 
-      <section id="by-the-numbers" className="py-10 md:py-14">
-        <h2 className="text-foreground mb-8 text-4xl font-bold tracking-tighter">
-          By the numbers
+      <section id="what-we-do" className="py-12 md:py-14">
+        <h2 className="text-foreground mb-6 text-4xl font-bold tracking-tighter">
+          What does MEC do?
         </h2>
-        <dl className="grid divide-y border-y sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+        <p className="text-muted-foreground max-w-4xl text-2xl leading-snug">
+          MEC brings founders, operators, and technical builders from across
+          MIT into the same room.
+        </p>
+        <p className="text-muted-foreground mt-5 max-w-4xl text-2xl leading-snug">
+          We run founder programs, late-night build sessions, retreats, and
+          small, curated dinners with founders, investors, and leaders shaping
+          what comes next in technology. We also connect students with
+          early-stage teams and VCs.
+        </p>
+        <p className="text-muted-foreground mt-5 max-w-4xl text-2xl leading-snug">
+          We help anyone at MIT meet the right people, explore an idea, or find
+          their place in startups.
+        </p>
+
+        <dl className="mt-12 grid divide-y border-y sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {stats.map((stat) => (
             <div
               key={stat.label}
@@ -130,45 +127,29 @@ export default function About() {
         </dl>
       </section>
 
-      <section id="programs" className="py-14 md:py-20">
-        <h2 className="text-foreground mb-10 text-4xl font-bold tracking-tighter">
-          Past programs
+      <section id="who-is-mec-for" className="py-12 md:py-16">
+        <h2 className="text-foreground mb-6 text-4xl font-bold tracking-tighter">
+          Who is MEC for?
         </h2>
-
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {programs.map((program) => (
-            <Link
-              key={program.href}
-              href={program.href}
-              target={program.external ? "_blank" : undefined}
-              rel={program.external ? "noopener noreferrer" : undefined}
-              className="group"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                <Image
-                  src={program.image}
-                  alt={program.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
-              <h3 className="mt-4 text-2xl font-medium tracking-tight">
-                {program.title}
-              </h3>
-              <p className="text-muted-foreground mt-1 text-lg leading-snug">
-                {program.description}
-              </p>
-            </Link>
-          ))}
-        </div>
+        <p className="text-muted-foreground max-w-4xl text-2xl leading-snug">
+          Any MIT student who is curious about startups and wants to spend more
+          time around builders. You do not need a company, a cofounder, or even
+          an idea to get involved. You can{" "}
+          <a
+            href="https://forms.gle/5YnXXzHW6hZj4awv9"
+            className="text-blue-600 underline underline-offset-4"
+          >
+            apply here
+          </a>
+          .
+        </p>
       </section>
 
       <section id="team-section" className="py-14 md:py-20">
         <h2 className="text-foreground mb-12 text-4xl font-bold tracking-tighter">
           Leadership
         </h2>
-        <div className="grid grid-cols-1 gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-x-3 gap-y-10 md:gap-x-5 md:gap-y-12 lg:grid-cols-5">
           {teamMembers.map((member) => (
             <article key={member.name}>
               <div className="relative aspect-[5/4] overflow-hidden bg-[#e7e7e7]">
@@ -181,11 +162,13 @@ export default function About() {
                   style={{ objectPosition: member.imagePosition }}
                 />
               </div>
-              <h3 className="mt-4 text-3xl font-medium tracking-tight">
+              <h3 className="mt-3 text-lg font-medium tracking-tight md:mt-4 md:text-2xl">
                 {member.name}
               </h3>
-              <p className="mt-4 text-lg font-medium">{member.role}</p>
-              <p className="text-muted-foreground mt-2 text-lg leading-snug">
+              <p className="mt-2 text-sm font-medium md:mt-3 md:text-base">
+                {member.role}
+              </p>
+              <p className="text-muted-foreground mt-2 text-sm leading-snug md:text-base">
                 {member.bio}
               </p>
             </article>

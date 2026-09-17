@@ -11,6 +11,12 @@ export function SiteFooter() {
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <span>© {new Date().getFullYear()} MIT Entrepreneurship Club</span>
                 <Link
+                  href={`mailto:${siteConfig.emails.general}`}
+                  className="font-medium underline underline-offset-4 hover:text-foreground"
+                >
+                  {siteConfig.emails.general}
+                </Link>
+                <Link
                   href={siteConfig.links.linkedin}
                   target="_blank"
                   rel="noreferrer"
@@ -25,6 +31,14 @@ export function SiteFooter() {
                   className="font-medium underline underline-offset-4 hover:text-foreground"
                 >
                   Instagram
+                </Link>
+                <Link
+                  href="https://accessibility.mit.edu/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium underline underline-offset-4 hover:text-foreground"
+                >
+                  Accessibility
                 </Link>
               </div>
             </div>

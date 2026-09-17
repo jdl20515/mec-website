@@ -115,7 +115,7 @@ export function Events() {
   }
 
   return (
-    <section className="container mx-auto py-16 md:py-24">
+    <section className="mx-auto max-w-7xl px-6 py-16 md:px-16 md:py-24">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-[2fr_1fr]">
         <div className="min-w-0">
           <h2 className="mb-4 text-3xl tracking-tight">Upcoming events</h2>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MEC Homepage Section Ideas</title>
+  <style>
+    :root { color-scheme: light; --ink: #171717; --muted: #68625d; --line: #ddd5cc; --paper: #fffaf3; --card: #fff; --accent: #7c2cff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.55 Inter, ui-sans-serif, system-ui, sans-serif; }
+    main { width: min(920px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0 80px; }
+    h1 { margin: 0; font-size: clamp(42px, 7vw, 72px); line-height: 1; letter-spacing: -.045em; }
+    .lede { max-width: 68ch; margin: 20px 0 8px; color: var(--muted); font-size: 19px; }
+    .meta { color: var(--muted); font-size: 13px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 32px 0 44px; }
+    nav a { border: 1px solid var(--line); border-radius: 999px; padding: 7px 12px; color: inherit; text-decoration: none; background: var(--card); }
+    h2 { margin: 52px 0 16px; font-size: 28px; letter-spacing: -.025em; }
+    .axes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .axis { padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
+    article { margin: 16px 0; padding: 26px; border: 1px solid var(--line); border-radius: 18px; background: var(--card); }
+    article.top { border-color: var(--accent); box-shadow: 0 8px 30px rgba(124,44,255,.08); }
+    h3 { margin: 0 0 10px; font-size: 24px; letter-spacing: -.02em; }
+    p { margin: 9px 0; }
+    .label { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .score { display: flex; gap: 16px; margin-top: 18px; color: var(--muted); font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); }
+    th, td { padding: 12px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+    footer { margin-top: 48px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 640px) { .axes { grid-template-columns: 1fr; } article { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>MEC homepage section ideas</h1>
+      <p class="lede">What could sit below the new mission statement without turning the homepage into a generic club directory.</p>
+      <p class="meta">Ideation · 2026-09-10 · Homepage below the mission statement</p>
+    </header>
+
+    <h2>Codebase context</h2>
+    <p>The homepage currently establishes ambition through a headline, community photography, and a mission statement. The rest of the site already contains three useful rhythms: weekly Late Nights, a 36-hour Sprint, and the 10-week StartHouse program. Events and Get Involved provide clear destinations, while founder stories and outcome claims still need stronger verified material. The existing Apply route also needs repair before new application-heavy sections rely on it.</p>
+
+    <h2>Topic axes</h2>
+    <div class="axes">
+      <div class="axis">Visitor next step</div>
+      <div class="axis">How MEC works</div>
+      <div class="axis">Proof and credibility</div>
+      <div class="axis">Freshness and maintenance</div>
+    </div>
+
+    <h2>Ranked ideas</h2>
+    <nav aria-label="Idea index">
+      <a href="#idea-1">1. Three speeds</a>
+      <a href="#idea-2">2. Choose your move</a>
+      <a href="#idea-3">3. Starting looks like</a>
+      <a href="#idea-4">4. MEC right now</a>
+      <a href="#idea-5">5. Get unstuck</a>
+      <a href="#idea-6">6. Bring and leave</a>
+    </nav>
+
+    <article id="idea-1" class="top">
+      <h3>1. Three Speeds of Building</h3>
+      <p>Show MEC through three memorable time scales: <strong>Every week</strong> for Late Night, <strong>36 hours</strong> for Sprint, and <strong>10 weeks</strong> for StartHouse. Each gets one sentence and one link.</p>
+      <p><span class="label">Axis</span><br>How MEC works</p>
+      <p><span class="label">Basis</span><br><strong>Direct:</strong> These three rhythms already exist across the Events and Programs pages.</p>
+      <p><span class="label">Why it matters</span><br>It makes the ambitious mission concrete without repeating the Programs grid. Visitors understand MEC as a progression from meeting people to building seriously.</p>
+      <p><span class="label">Downside</span><br>The labels and program durations need to stay accurate.</p>
+      <div class="score"><span>Confidence 94%</span><span>Complexity Low</span></div>
+    </article>
+
+    <article id="idea-2">
+      <h3>2. Choose Your Next Move</h3>
+      <p>Offer three intent-based choices: “I want to meet builders,” “I have an idea,” and “I’m already building.” Route each person to the most relevant event or program.</p>
+      <p><span class="label">Axis</span><br>Visitor next step</p>
+      <p><span class="label">Basis</span><br><strong>Reasoned:</strong> New visitors understand their own situation before they understand MEC’s internal program names.</p>
+      <p><span class="label">Why it matters</span><br>It turns inspiration into a personal action and reduces navigation friction.</p>
+      <p><span class="label">Downside</span><br>Every choice must lead to a working destination. The current Apply route is not ready.</p>
+      <div class="score"><span>Confidence 90%</span><span>Complexity Low</span></div>
+    </article>
+
+    <article id="idea-3">
+      <h3>3. What Starting Looks Like</h3>
+      <p>Feature three short, present-tense founder snapshots: testing an idea, shipping a first version, or finding a first customer. Use names and companies only when the details are verified.</p>
+      <p><span class="label">Axis</span><br>Proof and credibility</p>
+      <p><span class="label">Basis</span><br><strong>Direct:</strong> The homepage has strong community photos, but current alumni and case-study material is still thin or placeholder-based.</p>
+      <p><span class="label">Why it matters</span><br>Specific work in progress feels more credible than generic testimonials or vanity metrics.</p>
+      <p><span class="label">Downside</span><br>Requires a reliable stream of real founder updates.</p>
+      <div class="score"><span>Confidence 82%</span><span>Complexity Medium</span></div>
+    </article>
+
+    <article id="idea-4">
+      <h3>4. MEC Right Now</h3>
+      <p>Add one compact live strip with the next Late Night, current application status, and one recent founder milestone.</p>
+      <p><span class="label">Axis</span><br>Freshness and maintenance</p>
+      <p><span class="label">Basis</span><br><strong>Direct:</strong> The Events page already carries recurring Late Night information, while relevant dates are otherwise spread across the site.</p>
+      <p><span class="label">Why it matters</span><br>A single current signal makes the club feel active and gives the visitor something they can do now.</p>
+      <p><span class="label">Downside</span><br>High maintenance risk unless the homepage and Events page share one data source.</p>
+      <div class="score"><span>Confidence 79%</span><span>Complexity Medium</span></div>
+    </article>
+
+    <article id="idea-5">
+      <h3>5. What MEC Helps You Get Unstuck On</h3>
+      <p>Name four real founder problems: finding collaborators, testing an idea, shipping quickly, and meeting experienced founders. Pair each with one concrete MEC answer.</p>
+      <p><span class="label">Axis</span><br>Visitor next step</p>
+      <p><span class="label">Basis</span><br><strong>Direct:</strong> Existing routes contain Late Nights, Sprint, StartHouse, mentors, and partners, but visitors must translate those offerings into personal value themselves.</p>
+      <p><span class="label">Why it matters</span><br>It connects the mission statement to recognizable student friction.</p>
+      <p><span class="label">Downside</span><br>The copy must stay concrete or it becomes generic benefits language.</p>
+      <div class="score"><span>Confidence 76%</span><span>Complexity Low</span></div>
+    </article>
+
+    <article id="idea-6">
+      <h3>6. Bring One Thing. Leave With Another.</h3>
+      <p>Use a compact exchange format: “Bring an idea, leave with feedback,” “Bring a prototype, leave with sharper questions,” and “Come alone, meet other builders.”</p>
+      <p><span class="label">Axis</span><br>How MEC works</p>
+      <p><span class="label">Basis</span><br><strong>Reasoned:</strong> Visitors are more likely to attend when they can picture what they contribute and receive.</p>
+      <p><span class="label">Why it matters</span><br>It makes the community experience tangible without needing stats or long explanations.</p>
+      <p><span class="label">Downside</span><br>Avoid guarantees such as promising everyone a cofounder or customer.</p>
+      <div class="score"><span>Confidence 72%</span><span>Complexity Low</span></div>
+    </article>
+
+    <h2>Ideas cut</h2>
+    <table>
+      <thead><tr><th>Idea</th><th>Why it was rejected</th></tr></thead>
+      <tbody>
+        <tr><td>Generic Programs cards</td><td>Duplicates the Programs page without advancing the mission.</td></tr>
+        <tr><td>Partner logo wall</td><td>Logos do not explain MEC’s role and current partner proof is incomplete.</td></tr>
+        <tr><td>Generic testimonials</td><td>Weaker than specific, verified founder trajectories.</td></tr>
+        <tr><td>Large stat counters</td><td>Outcome claims need named sources and dates before becoming homepage proof.</td></tr>
+        <tr><td>Another Apply banner</td><td>The hero already handles this, and the Apply route currently needs repair.</td></tr>
+        <tr><td>Newsletter signup</td><td>Recently removed and unjustified without a clear publication or owner.</td></tr>
+      </tbody>
+    </table>
+
+    <footer>Composed 2026-09-10 by ce-ideate from the current MEC website and this conversation.</footer>
+  </main>
+</body>
+</html>
