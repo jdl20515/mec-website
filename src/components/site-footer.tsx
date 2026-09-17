@@ -6,8 +6,13 @@ export function SiteFooter() {
     <footer className="dark:bg-transparent">
       <div className="border-t border-border">
         <div className="container mx-auto px-4 xl:px-6">
-          <div className="flex h-14 items-center justify-between">
+          <div className="py-8">
             <div className="text-muted-foreground w-full px-1 text-center text-xs leading-loose sm:text-sm">
+              <address className="mb-5 text-sm not-italic leading-relaxed">
+                Massachusetts Institute of Technology<br />
+                77 Massachusetts Avenue<br />
+                Cambridge, MA 02139
+              </address>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <span>© {new Date().getFullYear()} MIT Entrepreneurship Club</span>
                 <Link

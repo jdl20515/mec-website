@@ -26,18 +26,21 @@ export function LogoButton() {
       <ContextMenuTrigger asChild>
         <Link
           href="/"
-          className="relative mr-6 flex items-center"
-          aria-label="Home"
+          className="relative flex min-w-0 items-center gap-3"
+          aria-label="MIT Entrepreneurship Club home"
         >
           <Image
             src="/mec-logo.png"
             alt="MEC Logo"
             width={120}
             height={120}
-            className="h-8 w-auto"
+            className="h-6 w-auto shrink-0 sm:h-8"
             quality={100}
             priority
           />
+          <span className="hidden text-xl font-medium leading-tight md:inline">
+            MIT Entrepreneurship Club
+          </span>
         </Link>
       </ContextMenuTrigger>
       <ContextMenuContent>
