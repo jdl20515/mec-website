@@ -34,11 +34,11 @@ export function LogoButton() {
             alt="MEC Logo"
             width={120}
             height={120}
-            className="h-6 w-auto shrink-0 sm:h-8"
+            className="hidden h-8 w-auto shrink-0 sm:block"
             quality={100}
             priority
           />
-          <span className="hidden text-xl font-medium leading-tight md:inline">
+          <span className="text-xs font-medium leading-tight sm:text-lg xl:whitespace-nowrap xl:text-xl">
             MIT Entrepreneurship Club
           </span>
         </Link>

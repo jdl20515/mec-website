@@ -61,6 +61,9 @@ export function MobileNav({ className }: { className?: string }) {
               <MobileLink href="/" onOpenChange={setOpen}>
                 Home
               </MobileLink>
+              <MobileLink href="/apply" onOpenChange={setOpen}>
+                Apply Now
+              </MobileLink>
               {docsConfig.mainNav.map(
                 (item, index) =>
                   item.href && (
